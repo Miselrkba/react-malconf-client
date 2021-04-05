@@ -5,9 +5,9 @@ const Copyright = () => {
     <div id="copyright" className="container">
       <p>
         &copy; Untitled. All rights reserved. | Photos by{' '}
-        <a href="http://fotogrph.com/">Fotogrph</a> | Design by{' '}
-        <a href="http://templated.co" rel="nofollow">
-          TEMPLATED
+        <a href="/#">Fotogrph</a> | Design by{' '}
+        <a href="/#" rel="nofollow">
+          Michael
         </a>
         .
       </p>

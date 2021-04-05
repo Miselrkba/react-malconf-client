@@ -1,17 +1,31 @@
+/* eslint-disable no-console */
+/* eslint-disable arrow-body-style */
 import React from 'react';
+import axios from 'axios';
 
 const Banner = () => {
+  const fetchData = () => {
+    axios
+      .get('http://localhost:4000/')
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div id="banner">
       <div className="container">
         <div className="title">
-          <h2>Etiam rhoncus volutpat</h2>
-          <span className="byline">Proin gravida porttitor accumsan</span>{' '}
+          <h2>Malware Configuration Parser</h2>
+          <span className="byline">Analyze your data</span>{' '}
         </div>
         <ul className="actions">
           <li>
-            <a href="/#" className="button">
-              Etiam posuere
+            <a href="/#" className="button" onClick={fetchData}>
+              Extract config
             </a>
           </li>
         </ul>

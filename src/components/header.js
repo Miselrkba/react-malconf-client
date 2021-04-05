@@ -5,7 +5,7 @@ const Header = () => {
     <div id="header" className="container">
       <div id="logo">
         <h1>
-          <a href="/#">Effeminate</a>
+          <a href="/#">Malconf</a>
         </h1>
       </div>
       <div id="menu">
@@ -17,22 +17,22 @@ const Header = () => {
           </li>
           <li>
             <a href="/#" title="">
-              Our Clients
+              Clients
             </a>
           </li>
           <li>
             <a href="/#" title="">
-              About Us
+              About
             </a>
           </li>
           <li>
             <a href="/#" title="">
-              Careers
+              News
             </a>
           </li>
           <li>
             <a href="/#" title="">
-              Contact Us
+              Contact
             </a>
           </li>
         </ul>
