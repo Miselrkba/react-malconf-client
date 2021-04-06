@@ -19,6 +19,7 @@ const Results = () => {
         <li>Keylog File: </li>
         <li>Loading File: </li>
         <ul className="actions">
+          Domains
           <li>IP: </li>
           <li>Password: </li>
           <li>Port: </li>

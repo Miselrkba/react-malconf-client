@@ -39,13 +39,6 @@ const Extra = () => {
           </div>
         </div>
       </div>
-      <ul className="actions">
-        <li>
-          <a href="/#" className="button">
-            Etiam posuere
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };

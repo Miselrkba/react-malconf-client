@@ -1,6 +1,7 @@
 :root {
   --purple: #6c388e;
   --white: #ffffff;
+  --orageYellow: #f9dd94;
 }
 
 /* body {
@@ -43,9 +44,9 @@ ul {
   list-style: none;
 }
 
-ul.actions {
+/* ul.actions {
   text-align: center;
-}
+} */
 
 p {
   line-height: 180%;
@@ -179,7 +180,7 @@ ul.contact li a.icon-rss:before {
   background: #ca85db;
   border-radius: 8px;
   letter-spacing: 0.2em;
-  line-height: 4em;
+  line-height: 3em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -537,4 +538,52 @@ ul.contact li a.icon-rss:before {
   /* width: fit-content;
   margin: 0 auto;
   border-radius: 0.5em; */
+}
+
+/* **********TESTING************ */
+
+ul {
+  /* counter-reset: li; */
+  /* list-style: none; */
+  /* padding: 0; */
+  /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); */
+}
+
+ul a {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #dad2ca;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+
+ul a:hover {
+  background: #e9e4e0;
+}
+ul a:hover:before {
+  transform: rotate(360deg);
+}
+ul a:before {
+  content: '💀';
+  /* font-size: 2em; */
+  /* background-image: url('./images/skull.jpg'); */
+  /* counter-increment: li; */
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: darkorange;
+  background: var(--orageYellow);
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
 }
