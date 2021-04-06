@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Header from './header';
 import Banner from './banner';
@@ -10,11 +10,14 @@ import Copyright from './copyright';
 import Results from './results';
 
 const App = () => {
+  const [data, setData] = useState('');
+
   const extractConfig = () => {
     axios
       .get('http://localhost:4000/')
       .then((response) => {
-        console.log(response.data);
+        setData(response.data);
+        // console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -25,7 +28,7 @@ const App = () => {
     <div id="wrapper">
       <Header />
       <Banner extractConfig={extractConfig} />
-      <Results />
+      <Results data={data} />
       <Extra />
       <Featured />
       <Page />

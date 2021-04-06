@@ -1,6 +1,25 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-console */
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-const Results = () => {
+const Results = ({ data }) => {
+  const {
+    loadingFile,
+    campaign,
+    connectionDelay,
+    connectionInterval,
+    detected,
+    runningPreProcessor,
+    version,
+    installName,
+    keylogFile,
+    mutex,
+    ip,
+    password,
+    port,
+  } = data;
+
   return (
     <div id="results">
       <div className="container">
@@ -10,22 +29,20 @@ const Results = () => {
         </div>
       </div>
       <ul className="actions">
-        <li>Campaign: </li>
-        <li>Connection Delay: </li>
-        <li>Connection Interval: </li>
-        <li>Detected: </li>
-        <li>Running PreProcessor: </li>
-        <li>Install Name: </li>
-        <li>Keylog File: </li>
-        <li>Loading File: </li>
-        <ul className="actions">
-          Domains
-          <li>IP: </li>
-          <li>Password: </li>
-          <li>Port: </li>
-        </ul>
-        <li>Mutex: </li>
-        <li>Version: </li>
+        <li>Campaign: {campaign}</li>
+        <li>Connection Delay: {connectionDelay} </li>
+        <li>Connection Interval: {connectionInterval} </li>
+        <li>Detected: {detected}</li>
+        <li>Running PreProcessor: {runningPreProcessor}</li>
+        <li>Loading File: {loadingFile}</li>
+        <li>Install Name: {installName}</li>
+        <li>Keylog File: {keylogFile}</li>
+        Domains
+        <li>IP: {ip}</li>
+        <li>Password: {password}</li>
+        <li>Port: {port}</li>
+        <li>Mutex: {mutex}</li>
+        <li>Version: {version}</li>
       </ul>
     </div>
   );
