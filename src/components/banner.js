@@ -1,20 +1,8 @@
-/* eslint-disable no-console */
 /* eslint-disable arrow-body-style */
 import React from 'react';
-import axios from 'axios';
 
-const Banner = () => {
-  const fetchData = () => {
-    axios
-      .get('http://localhost:4000/')
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
+// eslint-disable-next-line react/prop-types
+const Banner = ({ extractConfig }) => {
   return (
     <div id="banner">
       <div className="container">
@@ -24,7 +12,7 @@ const Banner = () => {
         </div>
         <ul className="actions">
           <li>
-            <a href="/#" className="button" onClick={fetchData}>
+            <a href="/#" className="button" onClick={() => extractConfig()}>
               Extract config
             </a>
           </li>

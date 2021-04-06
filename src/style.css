@@ -298,15 +298,15 @@ ul.contact li a.icon-rss:before {
   top: 1em;
   left: 0;
 }
-
+/* 
 #logo h1 {
   color: #9c39ae;
-}
+} */
 
 #logo a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #89249b;
+  color: var(--purple);
   border: 1px solid black;
   padding: 0.1em;
   /* border-radius: 0.2em; */

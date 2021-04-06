@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import React from 'react';
+import axios from 'axios';
 import Header from './header';
 import Banner from './banner';
 import Extra from './extra';
@@ -8,10 +10,21 @@ import Copyright from './copyright';
 import Results from './results';
 
 const App = () => {
+  const extractConfig = () => {
+    axios
+      .get('http://localhost:4000/')
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div id="wrapper">
       <Header />
-      <Banner />
+      <Banner extractConfig={extractConfig} />
       <Results />
       <Extra />
       <Featured />
