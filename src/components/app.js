@@ -5,12 +5,14 @@ import Extra from './extra';
 import Featured from './featured';
 import Page from './page';
 import Copyright from './copyright';
+import Results from './results';
 
 const App = () => {
   return (
     <div id="wrapper">
       <Header />
       <Banner />
+      <Results />
       <Extra />
       <Featured />
       <Page />

@@ -1,3 +1,12 @@
+:root {
+  --purple: #6c388e;
+  --white: #ffffff;
+}
+
+/* body {
+  background-color: var(--purple);
+} */
+
 html,
 body {
   height: 100%;
@@ -298,6 +307,12 @@ ul.contact li a.icon-rss:before {
   text-decoration: none;
   text-transform: uppercase;
   color: #89249b;
+  border: 1px solid black;
+  padding: 0.1em;
+  /* border-radius: 0.2em; */
+  border-left: none;
+  border-top: none;
+  border-right: none;
 }
 
 /*********************************************************************************/
@@ -349,10 +364,16 @@ ul.contact li a.icon-rss:before {
 #banner {
   overflow: hidden;
   padding: 7em 0em 5em 0em;
-  background: #ca85db url(images/hero.jpg) no-repeat center;
+  background: black url(images/hero.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
+  /* max-width: nt; */
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* width: fit-content;
+  margin: 0 auto;
+  border-radius: 0.5em; */
 }
 
 #banner .title {
@@ -417,6 +438,7 @@ ul.contact li a.icon-rss:before {
   overflow: hidden;
   padding: 5em 0em;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--purple);
 }
 
 #copyright p {
@@ -440,6 +462,11 @@ ul.contact li a.icon-rss:before {
   background: #ca85db;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  /* 
+  testing */
+  /* width: fit-content;
+  margin: 0 auto;
+  border-radius: 0.5em; */
 }
 
 #featured a {
@@ -493,4 +520,21 @@ ul.contact li a.icon-rss:before {
   margin-bottom: 0.5em;
   text-align: center;
   font-size: 3em;
+}
+
+/*********************************************************************************/
+/* Results                                                                      */
+/*********************************************************************************/
+
+#results {
+  overflow: hidden;
+  padding: 5em 0em;
+  background: var(--purple);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* 
+  testing */
+  /* width: fit-content;
+  margin: 0 auto;
+  border-radius: 0.5em; */
 }

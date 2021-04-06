@@ -4,12 +4,14 @@ const Copyright = () => {
   return (
     <div id="copyright" className="container">
       <p>
-        &copy; Untitled. All rights reserved. | Photos by{' '}
-        <a href="/#">Fotogrph</a> | Design by{' '}
-        <a href="/#" rel="nofollow">
+        &copy; Website Designed & Developed by{' '}
+        <a
+          href="https://portfolio-michael.netlify.app/"
+          rel="noreferrer"
+          target="_blank"
+        >
           Michael
         </a>
-        .
       </p>
     </div>
   );

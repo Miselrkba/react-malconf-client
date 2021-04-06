@@ -20,7 +20,7 @@ const Banner = () => {
       <div className="container">
         <div className="title">
           <h2>Malware Configuration Parser</h2>
-          <span className="byline">Analyze your data</span>{' '}
+          <span className="byline">Analyze Malware</span>{' '}
         </div>
         <ul className="actions">
           <li>

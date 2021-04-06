@@ -17,17 +17,17 @@ const Header = () => {
           </li>
           <li>
             <a href="/#" title="">
-              Clients
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="/#" title="">
+              Rats
             </a>
           </li>
           <li>
             <a href="/#" title="">
               About
-            </a>
-          </li>
-          <li>
-            <a href="/#" title="">
-              News
             </a>
           </li>
           <li>

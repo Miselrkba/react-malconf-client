@@ -5,17 +5,17 @@ const Featured = () => {
     <div id="featured">
       <div className="container">
         <div className="title">
-          <h2>Fusce ultrices fringilla metus</h2>
+          <h2>Current Rats</h2>
           <span className="byline">
-            Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna
-            congue
+            Here is a list of the currently supported RATS:
           </span>{' '}
         </div>
         <p>
-          This is <strong>Malconf</strong>, Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Rem aspernatur vitae consequatur!
-          Explicabo quibusdam nobis, pariatur exercitationem mollitia odit
-          molestias. Have fun :){' '}
+          LostDoor - Xtreme - AAR - AdWind - Adzok - AlienSpy - Alina - Arcom -
+          BlackNix - BlackShades - BlueBanana - Bozok - ClientMesh - CyberGate -
+          DarkComet - DarkRAT - HawkEye - Hrat - hworm - WSH - Jbifrost - JRat -
+          LuminosityLink - LuxNet - NanoCore - NetWire - njRat - Plasma - Remcos
+          - Saefko - Sakula - SpyNote - Mobihook
         </p>
       </div>
       <ul className="actions">
