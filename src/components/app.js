@@ -28,7 +28,7 @@ const App = () => {
     <div id="wrapper">
       <Header />
       <Banner extractConfig={extractConfig} />
-      <Results data={data} />
+      {data && <Results data={data} />}
       <Extra />
       <Featured />
       <Page />

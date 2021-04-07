@@ -1,21 +1,17 @@
 :root {
-  --purple: #6c388e;
+  --lifarsPurple: #6c388e;
   --white: #ffffff;
   --orangeYellow: #f9dd94;
   --darkOrangeYellow: #ffc31f;
   --redGrey: #656565;
   --blueGrey: #2b3f48;
+  --ice: #e9e4e0;
+  --pink: #ca85db;
 }
-
-/* html,
-body {
-  height: 100%;
-} */
 
 body {
   margin: 0px;
   padding: 0px;
-  /* background: #9c39ae; */
   font-family: 'Varela', sans-serif;
   font-size: 11pt;
   font-weight: 300;
@@ -25,148 +21,22 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   font-weight: 700;
   color: var(--blueGrey);
 }
 
-p,
-ol,
 ul {
-  margin-top: 0;
-}
-
-ol,
-ul {
-  /* padding: 0; */
   list-style: none;
 }
-
-/* ul.actions {
-  text-align: center;
-} */
 
 p {
   line-height: 180%;
 }
 
-a {
-  color: #0000ff;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 .container {
   overflow: hidden;
-  margin: 0em auto;
-  width: 1000px;
-}
-
-/*********************************************************************************/
-/* Image Style                                                                   */
-/*********************************************************************************/
-
-.image {
-  display: inline-block;
-}
-
-.image img {
-  display: block;
-  width: 100%;
-}
-
-.image-full {
-  display: block;
-  width: 100%;
-  margin: 0 0 2em 0;
-}
-
-.image-left {
-  float: left;
-  margin: 0 2em 2em 0;
-}
-
-.image-centered {
-  display: block;
-  margin: 0 0 2em 0;
-}
-
-.image-centered img {
-  margin: 0 auto;
-  width: auto;
-}
-
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
-
-ul.staff {
-  margin-bottom: 3em;
-}
-
-ul.staff li {
-  display: inline-block;
-}
-
-ul.staff li img {
-  width: 80%;
-  border-radius: 50%;
-}
-
-/*********************************************************************************/
-/* Social Icon Styles                                                            */
-/*********************************************************************************/
-
-ul.contact {
-  margin: 0;
-  padding: 2em 0em 0em 0em;
-  list-style: none;
-}
-
-ul.contact li {
-  display: inline-block;
-  padding: 0em 0.3em;
-  font-size: 1em;
-}
-
-ul.contact li span {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.contact li a {
-  color: #fff;
-}
-
-ul.contact li a:before {
-  display: inline-block;
-  background: #3f3f3f;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 20px;
-  text-align: center;
-  color: #ffffff;
-}
-
-ul.contact li a.icon-twitter:before {
-  background: #2daae4;
-}
-ul.contact li a.icon-facebook:before {
-  background: #39599f;
-}
-ul.contact li a.icon-dribbble:before {
-  background: #c4376b;
-}
-ul.contact li a.icon-tumblr:before {
-  background: #31516a;
-}
-ul.contact li a.icon-rss:before {
-  background: #f2600b;
 }
 
 /*********************************************************************************/
@@ -176,7 +46,7 @@ ul.contact li a.icon-rss:before {
 .button {
   display: inline-block;
   padding: 0em 3em;
-  background: #ca85db;
+  background: var(--pink);
   border-radius: 8px;
   letter-spacing: 0.2em;
   line-height: 3em;
@@ -214,33 +84,11 @@ ul.contact li a.icon-rss:before {
 
 .title .byline {
   font-size: 1.7em;
-  color: #6f6f6f;
+  color: var(--redGrey);
 }
 
 /*********************************************************************************/
-/* 4-column                                                                      */
-/*********************************************************************************/
-
-.box1,
-.box2,
-.box3,
-.box4 {
-  width: 235px;
-}
-
-.box1,
-.box2,
-.box3 {
-  float: left;
-  margin-right: 20px;
-}
-
-.box4 {
-  float: right;
-}
-
-/*********************************************************************************/
-/* 3-column                                                                      */
+/* Boxes                                                                      */
 /*********************************************************************************/
 
 .boxA,
@@ -249,112 +97,65 @@ ul.contact li a.icon-rss:before {
   width: 320px;
 }
 
-.boxA,
-.boxB {
-  float: left;
-  margin-right: 20px;
-}
-
-.boxC {
-  float: right;
-}
-
-/*********************************************************************************/
-/* 2-column                                                                      */
-/*********************************************************************************/
-
-.tbox1,
-.tbox2 {
-  width: 575px;
-}
-
-.tbox1 {
-  float: left;
-}
-
-.tbox2 {
-  float: right;
-}
-
-#wrapper {
-  background: #fff;
-}
-
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
 #header {
-  position: relative;
-  padding: 3em 0em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: auto;
 }
 
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
-
-#logo {
-  position: absolute;
-  top: 1em;
-  left: 0;
-}
 /* 
-#logo h1 {
-  color: #9c39ae;
+#logo {
+  padding-left: 9%;
 } */
 
 #logo a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--purple);
-  border: 1px solid black;
-  padding: 0.1em;
-  /* border-radius: 0.2em; */
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  color: var(--lifarsPurple);
+  border-bottom: 1px solid black;
 }
 
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
-
 #menu {
-  position: absolute;
-  top: 2em;
-  right: 0;
+  margin: 0.5em auto;
+  margin-right: -12px;
 }
-
 #menu ul {
-  display: inline-block;
-}
-
-#menu li {
-  display: block;
-  float: left;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1em;
 }
 
 #menu li a,
 #menu li span {
-  padding: 1em 2.5em;
-  /* letter-spacing: 1px; */
+  display: flex;
+  padding: 1em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8em;
-  /* color: #2b3f48; */
 }
 
 #menu li:hover a,
 #menu li.active a,
 #menu li.active span {
-  color: #2b3f48;
+  color: var(--blueGrey);
 }
 
 #menu .current_page_item a {
-  border: 2px solid #ca85db;
+  border: 2px solid var(--pink);
   border-radius: 6px;
-  color: #ca85db;
+  color: var(--pink);
 }
 
 /*********************************************************************************/
@@ -362,9 +163,15 @@ ul.contact li a.icon-rss:before {
 /*********************************************************************************/
 
 #banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
   overflow: hidden;
   padding: 7em 0em 5em 0em;
-  background: black url(images/hero.jpg) no-repeat center;
+  background: var(--lifarsPurple);
+  background: black url(images/skull2.jpg) no-repeat;
   background-size: cover;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
@@ -394,13 +201,19 @@ ul.contact li a.icon-rss:before {
   background: #9c39ae !important;
 }
 
+#banner .button:hover {
+  background: var(--darkOrangeYellow) !important;
+}
+
 /*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
 
 #page {
-  padding: 5em 0em;
+  padding: 5em 1em;
   text-align: center;
+  width: 80vw;
+  margin: auto;
 }
 
 #page .button {
@@ -410,46 +223,27 @@ ul.contact li a.icon-rss:before {
 }
 
 /*********************************************************************************/
-/* Content                                                                       */
-/*********************************************************************************/
-
-#content {
-}
-
-/*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-#sidebar {
-}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-
-#footer {
-}
-
-/*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
 
 #copyright {
   overflow: hidden;
-  padding: 5em 0em;
+  padding: 1em 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: var(--purple);
+  background: var(--lifarsPurple);
+  width: 80vw;
+  margin: auto;
+  color: var(--white);
 }
 
 #copyright p {
   text-align: center;
   font-size: 1em;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 #copyright a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white);
 }
 
 /*********************************************************************************/
@@ -458,15 +252,12 @@ ul.contact li a.icon-rss:before {
 
 #featured {
   overflow: hidden;
-  padding: 5em 0em;
-  background: #ca85db;
+  padding: 5em 1em;
+  background: var(--pink);
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  /* 
-  testing */
-  /* width: fit-content;
-  margin: 0 auto;
-  border-radius: 0.5em; */
+  width: 80vw;
+  margin: auto;
 }
 
 #featured a {
@@ -477,10 +268,7 @@ ul.contact li a.icon-rss:before {
   background: #fff;
   margin-top: 3em;
   font-size: 1em;
-  color: #ca85db;
-}
-
-#featured .title {
+  color: var(--pink);
 }
 
 #featured .title h2 {
@@ -495,25 +283,38 @@ ul.contact li a.icon-rss:before {
 /* Featured                                                                      */
 /*********************************************************************************/
 
+#three-column {
+  display: flex;
+  /* margin: 0 auto; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
 .box {
   padding: 3em 2em 2em 2em;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.5em;
   text-align: center;
+  /* margin: 1em; */
 }
 
 #extra {
   overflow: hidden;
-  padding: 5em 0em;
+  padding: 5em 1em;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 80vw;
+  margin: auto;
 }
 
 #extra .title {
   text-align: center;
 }
-
+/* 
 #extra .button {
   margin-top: 5em;
-}
+} */
 
 #extra .fa {
   display: block;
@@ -528,49 +329,37 @@ ul.contact li a.icon-rss:before {
 
 #results {
   overflow: hidden;
-  padding: 5em 0em;
-  background: var(--purple);
-  color: rgba(255, 255, 255, 0.8);
+  /* padding: 7em 0em 5em 0em; */
+  background: black url(./images//hero.jpg) no-repeat;
+  /* background-size: cover; */
   text-align: center;
-  /* 
-  testing */
-  /* width: fit-content;
-  margin: 0 auto;
-  border-radius: 0.5em; */
+  /* color: rgba(255, 255, 255, 0.8); */
+  width: 80vw;
+  margin: 5em auto;
 }
+/* #results li {
+  text-align: left;
+} */
 
 /* **********TESTING************ */
 
-ul {
-  /* counter-reset: li; */
-  /* list-style: none; */
-  /* padding: 0; */
-  /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); */
-}
-
 ul a {
   position: relative;
-  /* display: block; */
-  /* padding: 0.4em 0.4em 0.4em 2em; */
   margin: 0.5em 0;
-  background: #dad2ca;
+  /* background: #dad2ca; */
   color: #444;
-  /* text-decoration: none; */
   border-radius: 0.3em;
   transition: 0.3s ease-out;
 }
 
 ul a:hover {
-  background: #e9e4e0;
+  background: var(--ice);
 }
 ul a:hover:before {
   transform: rotate(360deg);
 }
 ul a:before {
   content: '💀';
-  /* font-size: 2em; */
-  /* background-image: url('./images/skull.jpg'); */
-  /* counter-increment: li; */
   position: absolute;
   left: -1.3em;
   top: 50%;
@@ -585,4 +374,13 @@ ul a:before {
   font-weight: bold;
   border-radius: 2em;
   transition: all 0.3s ease-out;
+}
+
+/* *********RESPONSIVNESS************ */
+/* everything over 550px  */
+@media (min-width: 550px) {
+}
+
+/*  everything over 850px */
+@media (min-width: 850px) {
 }

@@ -28,7 +28,7 @@ const Results = ({ data }) => {
           <span className="byline">Extracted Malware configuration</span>{' '}
         </div>
       </div>
-      <ul className="actions">
+      <ul>
         <li>Campaign: {campaign}</li>
         <li>Connection Delay: {connectionDelay} </li>
         <li>Connection Interval: {connectionInterval} </li>

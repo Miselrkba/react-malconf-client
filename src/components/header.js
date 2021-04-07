@@ -11,27 +11,27 @@ const Header = () => {
       <div id="menu">
         <ul>
           <li className="current_page_item">
-            <a href="/#" title="">
+            <a href="#header" title="">
               Homepage
             </a>
           </li>
           <li>
-            <a href="/#" title="">
+            <a href="#extra" title="">
               Features
             </a>
           </li>
           <li>
-            <a href="/#" title="">
+            <a href="#featured" title="">
               Rats
             </a>
           </li>
           <li>
-            <a href="/#" title="">
+            <a href="#page" title="">
               About
             </a>
           </li>
           <li>
-            <a href="/#" title="">
+            <a href="#copyright" title="">
               Contact
             </a>
           </li>
