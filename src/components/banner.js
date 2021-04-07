@@ -12,7 +12,11 @@ const Banner = ({ extractConfig }) => {
         </div>
         <ul className="actions">
           <li>
-            <a href="/#" className="button" onClick={() => extractConfig()}>
+            <a
+              href="#results"
+              className="button"
+              onClick={() => extractConfig()}
+            >
               Extract config
             </a>
           </li>
