@@ -10,7 +10,7 @@ const Banner = ({ extractConfig }) => {
         <div className="title">
           <h2>Malware Configuration Parser</h2>
           <span className="byline">
-            <Output text="✔️ API Initialized. Ready to Analyze Malware" />
+            <Output text="✔️ File uploaded to Malconf server. Press button to analyze Malware" />
           </span>{' '}
         </div>
         <ul className="actions">

@@ -20,7 +20,7 @@ const Page = () => {
       <ul className="actions">
         <li>
           <a href="/#" className="button">
-            Etiam posuere
+            to the top!
           </a>
         </li>
       </ul>

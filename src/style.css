@@ -2,6 +2,7 @@
   --lifarsPurple: #6c388e;
   --lifarsDarkPurple: #3d1152;
   --lifarsLightPurple: #c9b6d5;
+  --orangeRed: #f3558e;
   --white: #ffffff;
   --orangeYellow: #f9dd94;
   --darkOrangeYellow: #ffc31f;
@@ -9,6 +10,7 @@
   --blueGrey: #2b3f48;
   --ice: #e9e4e0;
   --pink: #ca85db;
+  --redishWhite: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -194,7 +196,7 @@ p {
 }
 
 #banner .title .byline {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--redishWhite);
 }
 
 #banner .button {
@@ -204,6 +206,7 @@ p {
 
 #banner .button:hover {
   background: var(--darkOrangeYellow) !important;
+  color: black;
 }
 
 /* ul a:before */
@@ -337,8 +340,10 @@ p {
 #results {
   overflow: hidden;
   padding: 5em 1em;
-  background: var(--lifarsLightPurple);
-  /* background: black url(./images//hero.jpg) no-repeat; */
+  /* background: ; */
+  background: var(--lifarsPurple) url(./images/duotone4.png) no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   width: 80vw;
   margin: auto;
@@ -346,9 +351,18 @@ p {
   border-radius: 0.5em;
 }
 #results li {
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 0.5em 1em;
   text-align: center;
+  color: var(--white);
+}
+
+#results h2 {
+  color: var(--white);
+}
+
+#results .title .byline {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .icon-container {
@@ -363,7 +377,7 @@ p {
   justify-content: center;
 }
 
-/* **********TESTING************ */
+/* **********Spinning Skull************ */
 
 ul a {
   position: relative;
@@ -400,8 +414,9 @@ ul a:before {
 
 .output {
   padding-left: 0.3em;
+  font-size: 1.1em;
   font-weight: 700;
-  color: var(--lifarsDarkPurple);
+  color: var(--darkOrangeYellow);
 }
 
 /* *********RESPONSIVNESS************ */

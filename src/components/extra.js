@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCloudDownloadAlt } from 'react-icons/fa';
+import { FcBinoculars, FcDataConfiguration, FcFlowChart } from 'react-icons/fc';
 
 const Extra = () => {
   return (
@@ -17,7 +17,7 @@ const Extra = () => {
           <div className="box">
             {' '}
             <span className="fa">
-              <FaCloudDownloadAlt />
+              <FcFlowChart />
             </span>
             <p>Can be installed into automated malware analysis pipelines.</p>
           </div>
@@ -25,7 +25,7 @@ const Extra = () => {
         <div className="boxB">
           <div className="box">
             <span className="fa">
-              <FaCloudDownloadAlt />
+              <FcBinoculars />
             </span>
             <p>Automagically detect the family and extract any config.</p>
           </div>
@@ -33,7 +33,7 @@ const Extra = () => {
         <div className="boxC">
           <div className="box">
             <span className="fa">
-              <FaCloudDownloadAlt />
+              <FcDataConfiguration />
             </span>
             <p>You can pass in a single file or a directory.</p>
           </div>

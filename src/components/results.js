@@ -35,7 +35,6 @@ const Results = ({ data }) => {
     password,
     port,
   } = data;
-  console.log(data);
   return (
     <div id="results">
       <div className="container">
