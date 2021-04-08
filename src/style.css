@@ -166,6 +166,7 @@ p {
 
 #banner {
   width: 80vw;
+  height: 62vh;
   margin: auto;
   overflow: hidden;
   padding: 5em 1em;
@@ -336,10 +337,12 @@ p {
 #results {
   overflow: hidden;
   padding: 5em 1em;
+  background: var(--lifarsLightPurple);
   /* background: black url(./images//hero.jpg) no-repeat; */
   text-align: center;
   width: 80vw;
   margin: auto;
+  margin-top: 6em;
   border-radius: 0.5em;
 }
 #results li {
@@ -350,9 +353,14 @@ p {
 
 .icon-container {
   position: relative;
-  bottom: -7px;
+  bottom: -6px;
   left: -8px;
   font-size: 1.5em;
+}
+.ul-split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* **********TESTING************ */
@@ -391,7 +399,9 @@ ul a:before {
 }
 
 .output {
-  color: lightcoral;
+  padding-left: 0.3em;
+  font-weight: 700;
+  color: var(--lifarsDarkPurple);
 }
 
 /* *********RESPONSIVNESS************ */

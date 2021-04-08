@@ -1,5 +1,6 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
+import Output from './output';
 
 // eslint-disable-next-line react/prop-types
 const Banner = ({ extractConfig }) => {
@@ -8,7 +9,9 @@ const Banner = ({ extractConfig }) => {
       <div className="container">
         <div className="title">
           <h2>Malware Configuration Parser</h2>
-          <span className="byline">Analyze Malware</span>{' '}
+          <span className="byline">
+            <Output text="✔️ API Initialized. Ready to Analyze Malware" />
+          </span>{' '}
         </div>
         <ul className="actions">
           <li>

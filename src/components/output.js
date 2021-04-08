@@ -9,8 +9,8 @@ const Output = ({ text = '' }) => {
     // Options for the Typed object
     const options = {
       strings: [text],
-      typeSpeed: 10,
-      // showCursor: false,
+      typeSpeed: 50,
+      backSpeed: 0,
     };
 
     // New Typed instance
@@ -22,7 +22,7 @@ const Output = ({ text = '' }) => {
     };
   }, [text]);
 
-  return <div id="output" />;
+  return <span id="output" />;
 };
 
 export default Output;

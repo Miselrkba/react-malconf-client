@@ -2,6 +2,7 @@
 /* eslint-disable no-console */
 /* eslint-disable react/prop-types */
 import React from 'react';
+
 import {
   FcAbout,
   FcAcceptDatabase,
@@ -17,7 +18,6 @@ import {
   FcMindMap,
   FcNews,
 } from 'react-icons/fc';
-import Output from './output';
 
 const Results = ({ data }) => {
   const {
@@ -45,85 +45,89 @@ const Results = ({ data }) => {
         </div>
       </div>
       <ul>
-        <li>
-          <span className="icon-container">
-            <FcBiotech />
-          </span>
-          Campaign: {campaign}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcAdvance />
-          </span>
-          Connection Delay: {connectionDelay}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcAlarmClock />
-          </span>
-          Connection Interval: {connectionInterval}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcCheckmark />
-          </span>
-          Detected: {detected}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcNews />
-          </span>
-          Running PreProcessor: {runningPreProcessor}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcFile />
-          </span>
-          Loading File: {loadingFile}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcBiohazard />
-          </span>
-          Install Name: {installName}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcAcceptDatabase />
-          </span>
-          Keylog File: {keylogFile}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcMindMap />
-          </span>
-          IP: {ip}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcKey />
-          </span>
-          Password: {password}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcCableRelease />
-          </span>
-          Port: {port}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcCapacitor />
-          </span>
-          Mutex: {mutex}
-        </li>
-        <li>
-          <span className="icon-container">
-            <FcAbout />
-          </span>
-          Version: {version}
-        </li>
-        <Output />
+        <div className="ul-split">
+          <li>
+            <span className="icon-container">
+              <FcBiotech />
+            </span>
+            Campaign: <span className="output"> {campaign}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcAdvance />
+            </span>
+            Connection Delay: <span className="output">{connectionDelay}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcAlarmClock />
+            </span>
+            Connection Interval:
+            <span className="output">{connectionInterval}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcCheckmark />
+            </span>
+            Detected: <span className="output"> {detected}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcNews />
+            </span>
+            Running PreProcessor:
+            <span className="output"> {runningPreProcessor} </span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcFile />
+            </span>
+            Loading File: <span className="output"> {loadingFile}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcBiohazard />
+            </span>
+            Install Name: <span className="output"> {installName}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcAcceptDatabase />
+            </span>
+            Keylog File: <span className="output"> {keylogFile}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcMindMap />
+            </span>
+            IP: <span className="output"> {ip}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcKey />
+            </span>
+            Password:
+            <span className="output"> {password ? `${password}` : `" "`}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcCableRelease />
+            </span>
+            Port: <span className="output"> {port}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcCapacitor />
+            </span>
+            Mutex: <span className="output"> {mutex}</span>
+          </li>
+          <li>
+            <span className="icon-container">
+              <FcAbout />
+            </span>
+            Version: <span className="output"> {version}</span>
+          </li>
+        </div>
       </ul>
     </div>
   );
