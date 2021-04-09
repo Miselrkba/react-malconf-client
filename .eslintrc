@@ -17,8 +17,8 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "arrow-body-style": ["error", "always"],
     "comma-dangle": ["error", "only-multiline"],
-    "react/prop-types": 1,
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react/prop-types": "off",
+    "no-console": "off",
     "no-nested-ternary": "off"
   }
 }

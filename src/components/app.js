@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 import axios from 'axios';
 import Header from './header';
@@ -14,7 +13,7 @@ const App = () => {
 
   const extractConfig = () => {
     axios
-      .get('http://localhost:4000/')
+      .get('https://malconf-server-node.herokuapp.com/')
       .then((response) => {
         setData(response.data);
       })

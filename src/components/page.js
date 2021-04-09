@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Page = () => {
   return (
@@ -9,19 +10,28 @@ const Page = () => {
           Python Decoder for Common Remote Access Trojans
         </span>{' '}
       </div>
-      <p>
-        Every day, new types of malware are discovered. However, many of them
-        are actually variants of existing malware — they share most of the code
-        and there is a slight difference in configurations. In most cases,
-        malware analysis begins with unpacking the malware to extract its
-        configuration. Malconf is python3 library which extracts configurations
-        from executable files .
-      </p>
+      <section className="restricted-container">
+        <p>
+          Every day, new types of malware are discovered. However, many of them
+          are actually variants of existing malware — they share most of the
+          code and there is a slight difference in configurations. In most
+          cases, malware analysis begins with unpacking the malware to extract
+          its configuration. Malconf is python3 library which extracts
+          configurations from executable files .
+        </p>
+      </section>
       <ul className="actions">
         <li>
-          <a href="/#" className="button">
+          <Link
+            activeClass="active"
+            to="header"
+            spy
+            smooth
+            duration={500}
+            className="button"
+          >
             to the top!
-          </a>
+          </Link>{' '}
         </li>
       </ul>
     </div>

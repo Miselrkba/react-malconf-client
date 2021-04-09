@@ -10,21 +10,16 @@ const Featured = () => {
             Here is a list of the currently supported RATS:
           </span>{' '}
         </div>
-        <p>
-          LostDoor - Xtreme - AAR - AdWind - Adzok - AlienSpy - Alina - Arcom -
-          BlackNix - BlackShades - BlueBanana - Bozok - ClientMesh - CyberGate -
-          DarkComet - DarkRAT - HawkEye - Hrat - hworm - WSH - Jbifrost - JRat -
-          LuminosityLink - LuxNet - NanoCore - NetWire - njRat - Plasma - Remcos
-          - Saefko - Sakula - SpyNote - Mobihook
-        </p>
+        <section className="restricted-container">
+          <p>
+            LostDoor - Xtreme - AAR - AdWind - Adzok - AlienSpy - Alina - Arcom
+            - BlackNix - BlackShades - BlueBanana - Bozok - ClientMesh -
+            CyberGate - DarkComet - DarkRAT - HawkEye - Hrat - hworm - WSH -
+            Jbifrost - JRat - LuminosityLink - LuxNet - NanoCore - NetWire -
+            njRat - Plasma - Remcos - Saefko - Sakula - SpyNote - Mobihook
+          </p>
+        </section>
       </div>
-      <ul className="actions">
-        <li>
-          <a href="/#" className="button">
-            Etiam posuere
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };
