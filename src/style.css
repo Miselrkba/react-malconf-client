@@ -25,8 +25,6 @@ body {
 h1,
 h2,
 h3 {
-  /* margin: 0;
-  padding: 0; */
   font-weight: 700;
   color: var(--blueGrey);
 }
@@ -58,7 +56,7 @@ p {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1em;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -71,7 +69,6 @@ p {
   line-height: 40px;
   border-radius: 20px;
   text-align: center;
-  color: #272925;
 }
 
 /*********************************************************************************/
@@ -117,10 +114,6 @@ p {
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
-/* 
-#logo {
-  padding-left: 9%;
-} */
 
 #logo a {
   text-decoration: none;
@@ -174,19 +167,16 @@ p {
   margin: auto;
   overflow: hidden;
   padding: 5em 1em;
-  /* background: var(--lifarsPurple); */
   background: var(--lifarsPurple) url(./images/skull1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  /* color: rgba(255, 255, 255, 0.8); */
   border-radius: 0.5em;
 }
 
 #banner .title {
   margin-bottom: 1em;
   color: var(--orangeYellow);
-  /* text-transform: uppercase !important; */
 }
 
 #banner .title h2 {
@@ -211,8 +201,6 @@ p {
   color: var(--darkOrangeYellow);
   font-weight: 100;
 }
-
-/* ul a:before */
 
 /*********************************************************************************/
 /* Page                                                                          */
@@ -292,14 +280,8 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
-
 #three-column {
   display: flex;
-  /* margin: 0 auto; */
-  /* align-items: center; */
   justify-content: space-evenly;
 }
 
@@ -308,15 +290,11 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
   text-align: center;
-  /* margin: 1em; */
 }
 
 #extra {
   overflow: hidden;
   padding: 5em 1em;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 80vw;
   margin: auto;
 }
@@ -324,10 +302,6 @@ p {
 #extra .title {
   text-align: center;
 }
-/* 
-#extra .button {
-  margin-top: 5em;
-} */
 
 #extra .fa {
   display: block;
@@ -347,7 +321,6 @@ p {
 #results {
   overflow: hidden;
   padding: 5em 1em;
-  /* background: ; */
   background: var(--lifarsPurple) url(./images/duotone4.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -357,6 +330,7 @@ p {
   margin-top: 6em;
   border-radius: 0.5em;
 }
+
 #results li {
   font-size: 1.3em;
   padding: 0.5em 1em;
@@ -389,7 +363,6 @@ p {
 ul a {
   position: relative;
   margin: 0.5em 0;
-  /* background: #dad2ca; */
   color: #444;
   border-radius: 0.3em;
   transition: 0.3s ease-out;
@@ -424,13 +397,4 @@ ul a:before {
   font-size: 1.1em;
   font-weight: 700;
   color: var(--darkOrangeYellow);
-}
-
-/* *********RESPONSIVNESS************ */
-/* everything over 550px  */
-@media (min-width: 550px) {
-}
-
-/*  everything over 850px */
-@media (min-width: 850px) {
 }
