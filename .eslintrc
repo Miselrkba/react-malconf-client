@@ -15,7 +15,7 @@
   "rules": {
     "linebreak-style": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": "off",
     "comma-dangle": ["error", "only-multiline"],
     "react/prop-types": "off",
     "no-console": "off",

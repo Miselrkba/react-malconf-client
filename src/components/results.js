@@ -1,6 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-console */
-/* eslint-disable react/prop-types */
 import React from 'react';
 
 import {
@@ -41,7 +38,6 @@ const Results = ({ data }) => {
       <div className="container">
         <div className="title">
           <h2>Results</h2>
-
           <span className="byline">Extracted Malware configuration</span>
         </div>
       </div>
@@ -51,7 +47,7 @@ const Results = ({ data }) => {
             <span className="icon-container ">
               <FcBiotech />
             </span>
-            Campaign: <span className="output"> {campaign}</span>
+            Campaign: <span className="output">{campaign}</span>
           </li>
           <li>
             <span className="icon-container">
@@ -70,38 +66,38 @@ const Results = ({ data }) => {
             <span className="icon-container">
               <FcCheckmark />
             </span>
-            Detected: <span className="output"> {detected}</span>
+            Detected: <span className="output">{detected}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcNews />
             </span>
             Running PreProcessor:
-            <span className="output"> {runningPreProcessor} </span>
+            <span className="output">{runningPreProcessor}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcFile />
             </span>
-            Loading File: <span className="output"> {loadingFile}</span>
+            Loading File: <span className="output">{loadingFile}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcBiohazard />
             </span>
-            Install Name: <span className="output"> {installName}</span>
+            Install Name: <span className="output">{installName}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcAcceptDatabase />
             </span>
-            Keylog File: <span className="output"> {keylogFile}</span>
+            Keylog File: <span className="output">{keylogFile}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcMindMap />
             </span>
-            IP: <span className="output"> {ip}</span>
+            IP: <span className="output">{ip}</span>
           </li>
           <li>
             <span className="icon-container">
@@ -114,19 +110,19 @@ const Results = ({ data }) => {
             <span className="icon-container">
               <FcCableRelease />
             </span>
-            Port: <span className="output"> {port}</span>
+            Port: <span className="output">{port}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcCapacitor />
             </span>
-            Mutex: <span className="output"> {mutex}</span>
+            Mutex: <span className="output">{mutex}</span>
           </li>
           <li>
             <span className="icon-container">
               <FcAbout />
             </span>
-            Version: <span className="output"> {version}</span>
+            Version: <span className="output">{version}</span>
           </li>
         </div>
       </ul>

@@ -14,12 +14,8 @@ const App = () => {
   const extractConfig = () => {
     axios
       .get('https://malconf-server-node.herokuapp.com/')
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      .then((response) => setData(response.data))
+      .catch((error) => console.log(error));
   };
 
   return (

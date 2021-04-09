@@ -1,13 +1,12 @@
-/* eslint-disable arrow-body-style */
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Output from './output';
 
-// eslint-disable-next-line react/prop-types
 const Banner = ({ extractConfig }) => {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
   return (
     <div id="banner" className="animate__animated animate__bounceInRight">
       <div className="container">
@@ -15,7 +14,7 @@ const Banner = ({ extractConfig }) => {
           <h2>Malware Configuration Parser</h2>
           <span className="byline">
             <Output />
-          </span>{' '}
+          </span>
         </div>
         <ul className="actions">
           <li>
