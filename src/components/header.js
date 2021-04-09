@@ -1,39 +1,46 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
     <div id="header" className="container">
       <div id="logo">
         <h1>
-          <a href="/#">Malconf</a>
+          <a
+            href="https://github.com/kevthehermit/RATDecoders"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Malconf
+          </a>
         </h1>
       </div>
       <div id="menu">
         <ul>
           <li className="current_page_item">
-            <a href="#header" title="">
+            <Link activeClass="active" to="header" spy smooth duration={500}>
               Homepage
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#extra" title="">
+            <Link activeClass="active" to="extra" spy smooth duration={500}>
               Features
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#featured" title="">
+            <Link activeClass="active" to="featured" spy smooth duration={500}>
               Rats
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#page" title="">
+            <Link activeClass="active" to="page" spy smooth duration={500}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#copyright" title="">
+            <Link activeClass="active" to="copyright" spy smooth duration={500}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

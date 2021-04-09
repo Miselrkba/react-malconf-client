@@ -35,18 +35,20 @@ const Results = ({ data }) => {
     password,
     port,
   } = data;
+
   return (
     <div id="results">
       <div className="container">
         <div className="title">
           <h2>Results</h2>
+
           <span className="byline">Extracted Malware configuration</span>
         </div>
       </div>
       <ul>
         <div className="ul-split">
           <li>
-            <span className="icon-container">
+            <span className="icon-container ">
               <FcBiotech />
             </span>
             Campaign: <span className="output"> {campaign}</span>

@@ -17,7 +17,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Varela', sans-serif;
-  font-size: 11pt;
+  font-size: 10pt;
   font-weight: 300;
   color: var(--redGrey);
 }
@@ -59,6 +59,7 @@ p {
   font-weight: 400;
   font-size: 1em;
   color: #fff;
+  cursor: pointer;
 }
 
 .button:before {
@@ -148,6 +149,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8em;
+  cursor: pointer;
 }
 
 #menu li:hover a,
@@ -180,15 +182,11 @@ p {
   /* color: rgba(255, 255, 255, 0.8); */
   border-radius: 0.5em;
 }
-/* 
-#banner img {
-  max-width: 50%;
-  height: auto;
-} */
 
 #banner .title {
   margin-bottom: 1em;
-  text-transform: uppercase !important;
+  color: var(--orangeYellow);
+  /* text-transform: uppercase !important; */
 }
 
 #banner .title h2 {
@@ -207,6 +205,11 @@ p {
 #banner .button:hover {
   background: var(--darkOrangeYellow) !important;
   color: black;
+}
+
+#output {
+  color: var(--darkOrangeYellow);
+  font-weight: 100;
 }
 
 /* ul a:before */

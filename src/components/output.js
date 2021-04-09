@@ -4,11 +4,11 @@ import Typed from 'typed.js';
 
 // Component to display an output
 
-const Output = ({ text = '' }) => {
+const Output = () => {
   useEffect(() => {
     // Options for the Typed object
     const options = {
-      strings: [text],
+      strings: [`File uploaded to Malconf server...✔️`],
       typeSpeed: 50,
       backSpeed: 0,
     };
@@ -20,7 +20,7 @@ const Output = ({ text = '' }) => {
     return () => {
       typed.destroy();
     };
-  }, [text]);
+  }, []);
 
   return <span id="output" />;
 };
