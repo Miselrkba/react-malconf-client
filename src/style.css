@@ -167,7 +167,7 @@ p {
   margin: auto;
   overflow: hidden;
   padding: 5em 1em;
-  background: var(--lifarsPurple) url(./images/skull1.jpg) no-repeat;
+  background: url(./images/skull1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
