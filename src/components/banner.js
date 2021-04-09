@@ -19,7 +19,7 @@ const Banner = ({ extractConfig }) => {
         <ul className="actions">
           <li>
             <Link
-              className="button animate__animated animate__bounce"
+              className="button animate__animated animate__bounce animate__delay-0.2s"
               activeClass="active"
               to="results"
               smooth

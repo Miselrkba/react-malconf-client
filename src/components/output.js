@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 const Output = () => {
   useEffect(() => {
     const options = {
-      strings: [`File uploaded to Malconf server...✔️`],
+      strings: [`✔️ File uploaded to Malconf server...`],
       typeSpeed: 50,
       backSpeed: 0,
     };
