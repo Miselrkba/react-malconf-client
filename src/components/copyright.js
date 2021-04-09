@@ -4,7 +4,7 @@ const Copyright = () => {
   return (
     <div id="copyright" className="container">
       <p>
-        &copy; Website Designed & Developed by{' '}
+        ☢️ Website Designed & Developed by{' '}
         <a
           href="https://portfolio-michael.netlify.app/"
           rel="noreferrer"
