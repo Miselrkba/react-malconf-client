@@ -1,16 +1,16 @@
 :root {
-  --lifarsPurple: #6c388e;
+  --blueGrey: #2b3f48;
+  --darkOrangeYellow: #ffc31f;
+  --ice: #e9e4e0;
   --lifarsDarkPurple: #3d1152;
   --lifarsLightPurple: #c9b6d5;
+  --lifarsPurple: #6c388e;
   --orangeRed: #f3558e;
-  --white: #ffffff;
   --orangeYellow: #f9dd94;
-  --darkOrangeYellow: #ffc31f;
-  --redGrey: #656565;
-  --blueGrey: #2b3f48;
-  --ice: #e9e4e0;
   --pink: #ca85db;
+  --redGrey: #656565;
   --redishWhite: rgba(255, 255, 255, 0.6);
+  --white: #ffffff;
 }
 
 body {
