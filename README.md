@@ -13,3 +13,7 @@ to install npm packages
 ### `yarn start`
 
 to start app
+
+### `deploy`
+
+https://malconf.netlify.app/
