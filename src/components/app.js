@@ -9,7 +9,7 @@ import Copyright from './copyright';
 import Results from './results';
 
 const App = () => {
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
 
   const extractConfig = () => {
     axios
